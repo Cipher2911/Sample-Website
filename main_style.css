@@ -1,0 +1,306 @@
+body {
+    background-color: #421e57;
+    margin: 0; 
+    padding: 0; 
+} 
+
+#box {
+    font-family: 'Garet', sans-serif;
+    font-weight: bold;
+    background-color: #cd44ff;
+    color: #fffff0; 
+    padding: 20px; 
+    height: auto; 
+    width: auto; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#box h2{
+    margin-left: 30px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links li{
+    padding: 8px; 
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fffff0; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 12px 6px 12px 6px;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-links a:hover {
+    background-color: #862e71;     
+    color: #fffff0;
+}
+
+#about-us, #candies, #government, #intro-text {
+    font-family: 'Garet', sans-serif;
+    font-weight: bold;
+    font-size: 20px; 
+    background-color: #421e57;
+    color: #fffff0; 
+    padding: 20px; 
+    height: auto; 
+    width: auto; 
+    align-items: center; 
+}
+
+#about-us, #intro-text, #government{
+    text-align: center;
+}
+
+#text-box {
+    background-color: #5c277a; /* Plain solid background color */
+    padding: 40px; /* Space inside the box so text doesn't touch the edges */
+    margin: 40px auto; /* Centers the box horizontally and adds vertical space */
+    max-width: 800px; /* Prevents the box from stretching too wide on large screens */
+    
+    /* Ensuring there are no extra styles */
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* Optional: Keep your text neat inside this plain box */
+.text-box p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Container styling to space out the bubbles */
+#gov-links {
+    font-family: 'Garet', sans-serif;
+    font-weight: bold;
+    font-size: 20px; 
+    background-color: #421e57;
+    color: #fffff0; 
+    padding: 40px 20px; 
+    height: auto; 
+    width: auto; 
+    display: flex;
+    justify-content: center; /* Centers the bubbles */
+    text-align: center;
+    align-items: center; 
+    gap: 15px; /* Adds space between each bubble */
+    flex-wrap: wrap; /* Keeps them neat on smaller screens */
+}
+
+/* The Bubble Effect specifically for links inside #gov-links */
+#gov-links a {
+    text-decoration: none;
+    color: #fffff0; 
+    background-color: #862e71; /* Bubble color */
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 28px; /* High horizontal padding for width */
+    border-radius: 30px; /* Creates the rounded bubble shape */
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+/* Hover effect for the bubbles */
+#gov-links a:hover {
+    background-color: #008080; 
+    color: black; /* Text changes to background color */
+    transform: translateY(-3px); /* Makes the bubble float up slightly */
+}
+
+p{
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 100;
+}
+
+/* For Candies */ 
+
+/* Centers the candidate's name and section title */
+.candidate-name, .section-title {
+    text-align: center;
+    color: #fffff0;
+    font-family: 'Garet', sans-serif;
+}
+
+/* Flexbox container to hold the project boxes horizontally */
+.platforms-container {
+    display: flex;
+    justify-content: space-between; /* Spaces boxes out evenly */
+    gap: 20px; /* Adds space between each box */
+    margin: 30px auto 60px; /* Adds margin around the container */
+    flex-wrap: wrap; /* Allows boxes to stack on small screens */
+    max-width: 1200px; /* Keeps it from stretching too wide on large screens */
+    padding: 0 20px;
+}
+
+/* The individual horizontal text boxes */
+.platform-box {
+    background-color: #5c277a; /* A lighter background color for the box */
+    padding: 25px;
+    border-radius: 12px; /* Rounded corners */
+    flex: 1; /* Forces all boxes to take up equal horizontal space */
+    min-width: 280px; /* Prevents boxes from getting too squished */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight drop shadow */
+}
+
+/* Styling the text inside the boxes */
+.platform-box h4 {
+    font-family: 'Garet', sans-serif;
+    font-weight: bold;
+    margin-top: 0;
+    color: #fffff0; /* A pop of bright color for the project title */
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: 'Garet', sans-serif;
+}
+
+.platform-desc {
+    font-family: 'Hanken Grotesk', sans-serif;
+    color: #fffff0;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+    text-align: justify;
+}
+
+
+/* Footer Styles */
+
+#contact-info {
+    background-color: #cd44ff; 
+    color: #fffff0;
+    font-family: 'Hanken Grotesk', sans-serif;
+    padding: 60px 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-announcement {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #fffff0; 
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1100px;
+    margin-bottom: 50px;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logos {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Temporary placeholders for your custom logos */
+.logo-placeholder {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.brand-name {
+    color: #fffff0; 
+    font-family: 'Hanken Grotesk', serif; 
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.brand-subtext {
+    margin: 0;
+    font-size: 14px;
+    color: #fffff0;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.contact-heading {
+    color: #fffff0; 
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+}
+
+.contact-email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.contact-email a {
+    color: #fffff0;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.contact-email a:hover {
+    color: #ffffff;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    color: #fffff0;
+    transition: color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links a:hover {
+    color: #ffffff; 
+}
+
+@media (max-width: 768px) {
+    .footer-main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+    
+    .footer-right {
+        align-items: center;
+    }
+}
